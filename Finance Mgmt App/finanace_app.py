@@ -387,7 +387,7 @@ class SettingsScreen(Screen):
         
         # Create buttons for each setting option
         for index, option in enumerate(settings_options):
-            btn = Button(text=option, size_hint=(0.5, None), height=40, pos_hint={'center_x': 0.5, 'center_y': 0.8 - index * 0.1})
+            btn = RoundedButton(text=option, size_hint=(0.5, None), height=40, pos_hint={'center_x': 0.5, 'center_y': 0.8 - index * 0.1})
             btn.bind(on_press=self.on_setting_selected)
             layout.add_widget(btn)
 
